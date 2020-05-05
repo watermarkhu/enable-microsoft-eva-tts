@@ -1,11 +1,13 @@
 # Enable Microsoft Eva Mobile (Cortana) TTS voice 
 
-## Prerequisites
+### Prerequisites
 
 * You may* need to change your Windows 10 language to English (US)
 * You may* need to setup Cortana (Windows Settings or Windows Cortana App) with English (US)
 
 *These settings cannot be toggled easily, so I am not sure whether they are necessary. 
+
+### How-to
 
 To enable Microsoft Eva Mobile: 
 
