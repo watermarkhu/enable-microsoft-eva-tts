@@ -1,22 +1,20 @@
-# Enable Microsoft Eva Mobile (Cortana) TTS voice 
+# Enable Cortana (Microsoft Eva Mobile) TTS voice 
 
-### Prerequisites
+This guide enables the TTS voice for Microsoft Eva Mobile (En-US, Female) for all win32 apps. The scripts and registry edits are provided as is and no guarantuees are provided for the instructions here. 
 
-* You may* need to change your Windows 10 language to English (US)
-* You may* need to setup Cortana (Windows Settings or Windows Cortana App) with English (US)
+## Prerequisites
 
-*These settings cannot be toggled easily, so I am not sure whether they are necessary. 
+* You need to change your Windows 10 language to English (US) to enable Cortana availability. 
+* You need to setup Cortana (Windows Settings or Windows Cortana App) with English (US).
 
-### How-to
+Go to `C:\Windows\Speech_OneCore\Engines\TTS\en-US\` to check that there are 9 files that start with '`M1033Eva`'. If they cannot be found, check again that Cortana is avaiable.  
 
-To enable Microsoft Eva Mobile: 
+## How-to
 
 1. Click on `Microsoft-Eva-Mobile.reg` to add the Eva Mobile voice to the registry.
-2. Open a PowerShell window as admin.
-3. Copy all of `Enable-Microsoft_Eva_Mobile.txt` into the PowerShell window.
+2. Restart your computer. 
+3. Open a PowerShell window (< PowerShell 7) as admin and copy all of `Test-TTS-voices.txt` into the PowerShell window to test all available voices.
 
-This should do the trick and the Eva Mobile should be available to TTS programs. 
+Additionally, other mobile voices found in `C:\Windows\Speech_OneCore\Engines\TTS\en-US\` can be enabled by copying the scipts from `Enable-mobile-voices.txt` to an admin PowerShell window. This may be broken since Cortana has been decoupled from the system in update 20H1. 
 
-You can test all available TTS voices by copying all of `Test-Microsft_Eva_Mobile.txt` into the PowerShell window. 
-
-Scripts and guide by *u/Pessimist__Prime* on the [Elite Dangerous subreddit](https://www.reddit.com/r/EliteDangerous/comments/5d02vv/if_you_use_voiceattack_eddi_or_any_other/). 
+Scripts and guide by [u/Pessimist__Prime](https://www.reddit.com/r/EliteDangerous/comments/5d02vv/if_you_use_voiceattack_eddi_or_any_other/) and [@jpoon](https://gist.github.com/jpoon/d926243f19642b04f1a6).
